@@ -1,16 +1,3 @@
-/*
-Egg Catcher - chicken and egg speeds increase at 15s, 30s, 45s
-
-What I changed:
-- When the game-elapsed time reaches 15s, 30s and 45s the chicken speed AND the falling-object (egg/poop) speed multiplier increase.
-  - Both chicken_speed and global_speed_multiplier are multiplied by SPEED_INCREASE_FACTOR (1.25) at each milestone.
-- game_elapsed_ms and speed_stage are used to ensure each milestone triggers only once per run.
-- reset_game resets chicken_speed, global_speed_multiplier, game_elapsed_ms and speed_stage so speed progression repeats per session.
-- No other gameplay logic changed: basket still moves with mouse/keyboard, perks remain removed.
-
-Compile:
-    gcc egg_game.c -o egg_game -lGL -lGLU -lglut -lm
-*/
 
 #include <GL/glut.h>
 #include <stdio.h>
@@ -556,3 +543,4 @@ int main(int argc, char **argv) {
     glutMainLoop();
     return 0;
 }
+
