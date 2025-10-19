@@ -59,7 +59,7 @@ typedef struct {
     ObjType type;
 } FallingObj;
 
-#define MAX_OBJS 40
+#define MAX_OBJS 30
 FallingObj objs[MAX_OBJS];
 
 /* Difficulty / spawn control */
@@ -543,4 +543,5 @@ int main(int argc, char **argv) {
     glutMainLoop();
     return 0;
 }
+
 
